@@ -22,14 +22,5 @@ def get_caller_info():
         print ("  {} : {} : {}".format(y, stack()[1][y].__class__.__name__, stack()[1][y]))
     print()
 
-    # now get rid of the directory (via basename)
-    # then split filename and extension (via splitext)
-    #caller_filename_only = os.path.splitext(os.path.basename(caller_filename_full))[0]
-
-    #caller_filename_only = path.splitext(path.filename(caller_filename_full))[0]
-    #callingFunction = inspect.stack()[1][3]
-    #print('\n< {} : {}() >'.format(callingFile, inspect.stack()[1][3]))
-    #f_name, f_ext = path.splitext(path.filename(caller_filename_full))
-
     # return both filename versions as tuple
     #return caller_filename_full, caller_filename_only
